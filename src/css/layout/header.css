@@ -1,5 +1,20 @@
+.icon {
+    
+}
 
+.name {
+    width: 185px;
+height: 20px;
 
+font-family: 'Montserrat';
+font-style: italic;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
 
+letter-spacing: -0.03em;
 
+color: #111111;
 
+}
