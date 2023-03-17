@@ -23,11 +23,11 @@
  /*     layout        */
 
 
-@import url('./layout/hero.css');
+@import url('./layout/header.css');
 @import url('./layout/hero.css');
 @import url('./layout/advantages.css');
 @import url('./layout/components.css');
-@import url('./layout/how-it’s-made.css');
+@import url('./layout/how-made.css');
 @import url('./layout/products.css');
 @import url('./layout/top.css');
 @import url('./layout/reviews.css');
@@ -53,4 +53,3 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-
