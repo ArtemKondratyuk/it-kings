@@ -1,0 +1,50 @@
+.adv-container {
+  width: 100%;
+  background-color:var(--how-made);
+  padding: 20px;
+}
+.adv-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.adv-thumb {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--advantages-text);
+  border-radius: 50%;
+}
+.adv-icon {
+  fill: var(--buy-now);
+  
+}
+.adv-third-title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: calc(22 / 18);
+  color: var(--button-text);
+  margin-top: 22px;
+  margin-bottom: 18px;
+}
+.adv-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(17 / 14);
+  letter-spacing: -0.02em;
+  color: var(--advantages-text);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
