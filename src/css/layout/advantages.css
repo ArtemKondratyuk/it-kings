@@ -48,3 +48,17 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px){
+  .adv-container{
+    width:768px ;
+  }
+  .adv-list{
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 60px;
+    row-gap:40px ;
+  }
+  .adv-item{
+    width: 308px;
+  }
+}
