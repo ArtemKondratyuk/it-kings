@@ -1,6 +1,8 @@
 .components-container {
     width: 100%;
     margin: 0 auto;
+    padding-top: 72px;
+    padding-bottom: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +15,7 @@ font-size: 20px;
 line-height: 1.2;
 text-align: center;
 letter-spacing: -0.03em;
-margin: 0;
+margin: 0 auto;
 margin-bottom: 24px;
 }
 .components-title-item{
@@ -46,7 +48,7 @@ color: #111111;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 335px;
+    width: 320px;
     height: 270px;
     border-radius: 15px;
     border: 1px solid;
@@ -79,4 +81,66 @@ margin-top: 25px;
 .components-hover-object{
     display: none;
 }
+@media screen and (min-width: 375px) and (max-width:767px){
+    .components-container{
+        width: 375px;
+    }
+    .container{
+        width: 375px;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px){
+    .components-container{
+        width: 768px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .container{
+        width: 768px;
+        }
+    .components-title{
+    width: 411px;
+    font-size: 24px;
+    line-height: calc(28/24);
+    letter-spacing: -0.03em;
+    }
+    .components-title+.components-text{
+        width: 486px;
+        margin: 0 auto;
+    }
+    .components-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 32px;
+        row-gap: 32px;
+    }
+}
 
+@media screen and (min-width: 1200px){
+    .components-container{
+    width: 1200px;
+    }
+    .container{
+    width: 1200px;
+    }
+    .components-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .components-img-wrap{
+        width: 270px;
+    }
+    .components-title{
+        width: 411px;
+        font-size: 24px;
+        line-height: calc(28/24);
+        letter-spacing: -0.03em;
+        }
+        .components-title+.components-text{
+            width: 486px;
+            margin: 0 auto;
+            margin-top: 28px;
+            margin-bottom: 50px;
+        }
+}
