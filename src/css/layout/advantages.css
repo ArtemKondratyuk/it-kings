@@ -52,6 +52,9 @@
   .adv-container{
     width:768px ;
   }
+  .container{
+    width: 768px;
+  }
   .adv-list{
     flex-direction: row;
     flex-wrap: wrap;
@@ -60,5 +63,27 @@
   }
   .adv-item{
     width: 308px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .container{
+    width: 1200px;
+  }
+  .adv-list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .adv-item{
+    width: 308px;
+  }
+  .adv-item:not(:last-child)::after{
+    content: '';
+    display:block;
+    width: 124px;
+    height: 0px;
+    border: 1px solid var(--advantages-text);
+    transform: rotate(90deg);
   }
 }
