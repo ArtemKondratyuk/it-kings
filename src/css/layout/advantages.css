@@ -1,6 +1,6 @@
 .adv-container {
   width: 100%;
-  background-color: #1e1823;
+  background-color:var(--how-made);
   padding: 20px;
 }
 .adv-list {
@@ -18,7 +18,7 @@
   border-radius: 50%;
 }
 .adv-icon {
-  fill: rgba(253, 146, 34, 1);
+  fill: var(--buy-now);
   
 }
 .adv-third-title {
