@@ -1,0 +1,59 @@
+.hero {
+  background-color: #1e1823;
+  background-image: url(../img/chocolate-covered-cocoa-powder-m.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.hero-wrap {
+}
+.hero-header {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+
+  max-width: 299px;
+  padding-bottom: 32px;
+}
+.list {
+}
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  padding-bottom: 32px;
+}
+
+.buttons-item {
+}
+.button-buy-now {
+  background: #fd9222;
+  border-radius: 100px;
+  padding: 12px 28px;
+
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.button-how-made {
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  padding: 12px 28px;
+  color: #fff;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+}
+.scroll-button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
