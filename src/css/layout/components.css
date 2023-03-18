@@ -17,7 +17,7 @@ margin: 0;
 margin-bottom: 24px;
 }
 .components-title-item{
-    color: rgba(253, 146, 34, 1);
+    color:var(--buy-now);
 }
 .components-text {
 font-weight: 400;
@@ -50,22 +50,22 @@ color: #111111;
     height: 270px;
     border-radius: 15px;
     border: 1px solid;
-    border-color: #FD9222;
+    border-color:var(--buy-now);
     position: relative;
 }
 .first-wrap{
-    background-color:#FD9222;
+    background-color:var(--buy-now);
     border-color: transparent;
 }
 .first-wrap .components-subtitle{
-    color: #FFFFFF;
+    color: var(--button-text);
 }
 .third-wrap{
-background-color: #1E1823;
+background-color:var(--how-made);
 border-color: transparent;
 }
 .third-wrap .components-subtitle{
-    color: #FFFFFF;
+    color: var(--button-text);
 }
 .components-subtitle{
 font-weight: 600;
