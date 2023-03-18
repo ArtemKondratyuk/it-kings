@@ -25,7 +25,7 @@
   font-weight: 600;
   font-size: 18px;
   line-height: calc(22 / 18);
-  color: #ffffff;
+  color: var(--button-text);
   margin-top: 22px;
   margin-bottom: 18px;
 }
