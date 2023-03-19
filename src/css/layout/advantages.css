@@ -1,6 +1,6 @@
 .adv-container {
   width: 100%;
-  background-color:var(--how-made);
+  background-color: var(--how-made);
   padding: 20px;
 }
 .adv-list {
@@ -19,7 +19,6 @@
 }
 .adv-icon {
   fill: var(--buy-now);
-  
 }
 .adv-third-title {
   font-weight: 600;
@@ -48,42 +47,52 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-@media screen and (min-width: 768px) and (max-width: 1199px){
-  .adv-container{
-    width:768px ;
-  }
-  .container{
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .adv-container {
     width: 768px;
   }
-  .adv-list{
+  .container {
+    width: 768px;
+  }
+  .adv-list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 60px;
-    row-gap:40px ;
+    row-gap: 40px;
   }
-  .adv-item{
+  .adv-item {
     width: 308px;
   }
 }
-@media screen and (min-width: 1200px){
-  .container{
-    width: 1200px;
+@media screen and (min-width: 1200px) {
+  .adv-container {
+    min-width: 1200px;
   }
-  .adv-list{
+  .container {
+    min-width: 1200px;
+  }
+  .adv-list {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 88px;
   }
-  .adv-item{
-    width: 308px;
+  .adv-item {
+    width: 326px;
+    height: 244px;
+    position: relative;
   }
-  .adv-item:not(:last-child)::after{
+  .adv-item:not(:first-child)::before {
     content: '';
-    display:block;
+    display: block;
     width: 124px;
     height: 0px;
-    border: 1px solid var(--advantages-text);
+    border: 1px solid rgba(255, 255, 255, 0.5);
     transform: rotate(90deg);
+    transform-origin: left;
+    position: absolute;
+    top: 60px;
+    left: -70px;
   }
 }
