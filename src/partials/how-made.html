@@ -1,4 +1,80 @@
-<section>
+<section class="how-made">
+  <div class="container">
+    <h2 class="how-made-heading">how it's <span>made?</span></h2>
 
-    
+    <div class="how-made-wrap">
+      <div class="how-made-video-wrap box">
+        <div class="how-made-poster box">
+          <picture>
+            <source
+              srcset="../img/image.jpg 1x, ../img/image-2x.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="../img/image-t.jpg 1x, ../img/image-t-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="../img/image-m.jpg 1x, ../img/image-m-2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <img
+              src="../img/image-m.jpg"
+              alt="Chocolate in the bowl"
+              width="335"
+              height="500"
+            />
+          </picture>
+        </div>
+
+        <!-- <iframe
+          class="how-made-video box"
+          src="../img/image.jpg"
+          title="Chocolate in the bowl"
+          name="iframe_a"
+          autoplay="1"
+          controls="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        >How Ukrainian handmade chocolate is made</iframe> -->
+
+        <a
+          class="how-made-video-link"
+          href="https://www.youtube.com/embed/41UbWmXKWkc?controls=0"
+          title="How Ukrainian handmade chocolate is made"
+          target="iframe_a"
+        >
+          <svg class="how-made-icon" width="32" height="32">
+            <use href="../img/icons.svg#icon-play"></use>
+          </svg>
+        </a>
+      </div>
+
+      <div class="how-made-recipe-wrap box">
+        <h3 class="how-made-title">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="how-made-list">
+          <li class="how-made-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li class="how-made-item">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="how-made-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="how-made-item">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="how-made-item">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </section>
