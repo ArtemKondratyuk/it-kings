@@ -45,7 +45,7 @@
   width: 100%;
   height: 100%;
   object-fit: contain;
-  background-color: #000;
+  /* background-color: #000; */
 }
 
 .how-made-video {
@@ -69,11 +69,11 @@
 }
 
 .how-made-icon {
-  width: 35px;
-  height: 35px;
-
-  fill: currentColor;
-  stroke: currentColor;
+  width: 32px;
+  height: 32px;
+  fill: var(--button-text);
+  /* fill: currentColor; */
+  /* stroke: currentColor; */
 }
 
 .how-made-recipe-wrap {
