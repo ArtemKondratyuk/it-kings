@@ -7,7 +7,16 @@
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
       visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .backdrop.is-hidden .reweu {
+    transform: translate(-50%, -50%) scaleX(0) rotate(80deg);
+  }
+
   /* @media screen and (max-width: 375px) {
     .container {
       max-width: 396px;}} */
