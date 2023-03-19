@@ -19,6 +19,7 @@
   flex-direction: column;
   gap: 18px;
   max-width: 335px;
+  margin: 0 auto;
 }
 
 .product-item {
