@@ -51,7 +51,7 @@
   .adv-container {
     width: 375px;
   }
-  .container {
+  .adv-container  .container {
     width: 375px;
   }
 }
@@ -60,7 +60,7 @@
   .adv-container {
     width: 768px;
   }
-  .container {
+  .adv-container  .container {
     width: 768px;
   }
   .adv-list {
@@ -77,7 +77,7 @@
   .adv-container {
     min-width: 1200px;
   }
-  .container {
+  .adv-container  .container {
     min-width: 1200px;
   }
   .adv-list {
