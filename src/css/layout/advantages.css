@@ -47,6 +47,15 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+@media screen and (min-width: 375px){
+  .adv-container {
+    width: 375px;
+  }
+  .container {
+    width: 375px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .adv-container {
     width: 768px;
