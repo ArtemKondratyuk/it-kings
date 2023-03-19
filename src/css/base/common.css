@@ -1,12 +1,49 @@
 * {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-  }
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    background-color: var(--button-background); 
-    margin: 0;   
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: var(--button-background);
+  margin: 0;
+}
+
+/* Загальні стилі 
+додати через пробіл після унікального стиля елемента, 
+ідентичні властивості прибрати в унікальному стилі */
+
+/* Заокруглені бокси */
+.box {
+  border-radius: 15px;
+}
+
+/* 
+<h2> Заголовок секції </h2> 
+*/
+.heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* 
+<h3> Підзаголовок </h3> 
+*/
+.title {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+}
+
+/* Кнопка */
+
+.btn {
+  font-family: inherit;
+  border-radius: 100px;
 }

@@ -1,7 +1,5 @@
 .box {
   border-radius: 15px;
-
-  /* outline: 1px solid teal; */
 }
 
 .how-made {
@@ -9,8 +7,6 @@
 }
 
 .how-made-heading {
-  /* font-family: 'Montserrat';
- font-style: normal; */
   font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
@@ -42,8 +38,14 @@
   height: 500px;
 
   background-color: var(--elipse-b);
+}
 
-  overflow: hidden;
+.how-made-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
 }
 
 .how-made-video {
@@ -59,7 +61,11 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  color: #ffffff;
+  color: var(--button-text);
+}
+
+.how-made-video-link:hover {
+  color: var(--buy-now);
 }
 
 .how-made-icon {
@@ -67,20 +73,18 @@
   height: 35px;
 
   fill: currentColor;
+  stroke: currentColor;
 }
 
 .how-made-recipe-wrap {
   width: 100%;
   max-width: 335px;
-  /* height: 456px; */
 
   padding: 20px 14px;
-  background-color: #fff;
+  background-color: var(--button-text);
 }
 
 .how-made-title {
-  /* font-family: 'Montserrat';
- font-style: normal; */
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
@@ -100,9 +104,7 @@
 
 .how-made-item {
   position: relative;
-  /* font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400; */
+
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -113,7 +115,6 @@ font-weight: 400; */
 }
 
 .how-made-item::before {
-  /* display: inline-block; */
   content: ' ';
   position: absolute;
   top: 5px;
