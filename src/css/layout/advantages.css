@@ -2,6 +2,7 @@
   width: 100%;
   background-color: var(--how-made);
   padding: 20px;
+  margin: 0 auto;
 }
 .adv-list {
   display: flex;
