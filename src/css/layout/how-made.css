@@ -1,7 +1,30 @@
+/* For common.css */
+/* Hidden header pattern */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+/* ------------------------ */
 .box {
   border-radius: 15px;
 }
+/* ------------------------ */
 
+/* Section HOW IT'S MADE? */
 .how-made {
   padding-bottom: 72px;
 }
@@ -34,25 +57,28 @@
   position: relative;
 
   width: 100%;
-  max-width: 335px;
-  height: 500px;
+  height: 100%;
 
   background-color: var(--elipse-b);
 }
 
 .how-made-poster {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  /* background-color: #000; */
+  position: relative;
+
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
 }
 
 .how-made-video {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border: none;
 }
 
 .how-made-video-link {
@@ -60,25 +86,28 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   color: var(--button-text);
 }
 
-.how-made-video-link:hover {
-  color: var(--buy-now);
+.how-made-icon {
+  width: 35px;
+  height: 35px;
+  stroke: currentColor;
+  fill: transparent;
 }
 
-.how-made-icon {
-  width: 32px;
-  height: 32px;
-  fill: var(--button-text);
-  /* fill: currentColor; */
-  /* stroke: currentColor; */
+.how-made-video-link:hover .how-made-icon {
+  stroke: var(--buy-now);
 }
+
+/* .how-made-video-link:active .how-made-icon {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+} */
 
 .how-made-recipe-wrap {
   width: 100%;
-  max-width: 335px;
 
   padding: 20px 14px;
   background-color: var(--button-text);
@@ -98,8 +127,9 @@
   display: flex;
   flex-direction: column;
   gap: 18px;
-  left: 16px;
+
   top: 0px;
+  left: 16px;
 }
 
 .how-made-item {
@@ -132,23 +162,23 @@
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
   .how-made > .container {
-    max-width: 335px;
+    width: 335px;
   }
 }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
   .how-made > .container {
-    max-width: 614px;
+    width: 614px;
   }
 
   .how-made-video-wrap {
-    max-width: 614px;
+    /* max-width: 614px; */
     height: 400px;
   }
 
   .how-made-recipe-wrap {
-    max-width: 614px;
+    /* max-width: 614px; */
     height: 356px;
   }
 
@@ -161,7 +191,7 @@
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
   .how-made > .container {
-    max-width: 1136px;
+    width: 1136px;
   }
 
   .how-made-wrap {
@@ -169,11 +199,11 @@
   }
 
   .how-made-video-wrap {
-    max-width: 600px;
-    height: 400px;
+    width: 600px;
+    /* height: 400px; */
   }
   .how-made-recipe-wrap {
-    max-width: 516px;
+    width: 516px;
     height: 400px;
   }
 }
