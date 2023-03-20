@@ -80,3 +80,32 @@
   line-height: 17px;
   color: var(--elipse-b);
 }
+
+@media screen and (min-width: 768px) {
+  .products > .container {
+    width: 744px;
+  }
+
+  .products-title {
+    margin-bottom: 50px;
+  }
+
+  .product-item {
+    flex-basis: calc((100% - 36px) / 3);
+  }
+
+  .products-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .products > .container {
+    width: 1176px;
+  }
+  .product-item {
+    flex-basis: calc((100% - (18px * 3)) / 4);
+  }
+}
