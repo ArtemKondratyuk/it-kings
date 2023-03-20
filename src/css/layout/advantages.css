@@ -55,12 +55,12 @@
   overflow: hidden;
 }
 
-@media screen and (min-width: 375px){
+@media screen and (min-width: 375px) {
   .adv-container {
     width: 375px;
   }
 
-  .adv-container  .container {
+  .adv-container .container {
     width: 375px;
   }
 }
@@ -70,7 +70,7 @@
     width: 768px;
   }
 
-  .adv-container  .container {
+  .adv-container .container {
     width: 768px;
   }
 
@@ -90,8 +90,8 @@
   .adv-container {
     min-width: 1200px;
   }
-  
-  .adv-container  .container {
+
+  .adv-container .container {
     min-width: 1200px;
   }
 
@@ -108,7 +108,7 @@
     height: 244px;
     position: relative;
   }
-  
+
   .adv-item:not(:first-child)::before {
     content: '';
     display: block;
