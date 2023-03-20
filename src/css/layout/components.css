@@ -8,6 +8,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .components-title {
   width: 280px;
   font-weight: 600;
@@ -18,9 +19,11 @@
   margin: 0 auto;
   margin-bottom: 24px;
 }
+
 .components-title-item {
   color: var(--buy-now);
 }
+
 .components-text {
   font-weight: 400;
   font-size: 14px;
@@ -29,6 +32,7 @@
   letter-spacing: -0.02em;
   color: #111111;
 }
+
 .components-list {
   display: flex;
   flex-direction: column;
@@ -37,6 +41,7 @@
   row-gap: 20px;
   margin-top: 32px;
 }
+
 .components-item {
   display: flex;
   flex-direction: column;
@@ -44,6 +49,7 @@
   justify-content: center;
   transition-property: transform;
 }
+
 .components-img-wrap {
   display: flex;
   flex-direction: column;
@@ -57,20 +63,25 @@
   position: relative;
   overflow: hidden;
 }
+
 .first-wrap {
   background-color: var(--buy-now);
   border-color: transparent;
 }
+
 .first-wrap .components-subtitle {
   color: var(--button-text);
 }
+
 .third-wrap {
   background-color: var(--how-made);
   border-color: transparent;
 }
+
 .third-wrap .components-subtitle {
   color: var(--button-text);
 }
+
 .components-subtitle {
   font-weight: 600;
   font-size: 14px;
@@ -80,6 +91,7 @@
   margin-left: 28px;
   margin-top: 25px;
 }
+
 .components-hover-object {
   width: 336px;
   height: 270px;
@@ -95,6 +107,7 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .components-hover-object .components-subtitle {
   font-size: 18px;
   line-height: calc(22 / 18);
@@ -102,20 +115,24 @@
   text-align: left;
   margin: 0;
 }
+
 .components-hover-object .components-text {
   text-align: left;
 }
+
 .components-item:is(:hover, :focus) .components-hover-object {
   transform: translateY(0);
   opacity: unset;
   visibility: visible;
   pointer-events: all;
 }
+
 .comp-hover-content{
     width: 280px;
     height: 214px;
     padding: 28px;
 }
+
 .components-button {
   width: 80px;
   height: 24px;
@@ -123,14 +140,15 @@
   margin-bottom: 14px;
   border: 1px solid var(--buy-now);
   border-radius: 35px;
-  background-color: #fafafa;
+  background-color: var(--button-background);
   font-weight: 400;
   font-size: 10px;
   line-height: 12px;
 }
+
 .components-button:is(:hover, :focus){
     background-color: var(--buy-now);
-    color: #ffffff;
+    color: var(--button-text);
     border: 1px solid transparent;
 }
 
@@ -142,35 +160,42 @@
     width: 375px;
   }
 }
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .components-container {
     width: 768px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
+
   .components-container .container {
     width: 768px;
   }
+
   .components-title {
     width: 411px;
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: -0.03em;
   }
+
   .components-title + .components-text {
     width: 486px;
     margin: 0 auto;
   }
+
   .components-list {
     flex-direction: row;
     flex-wrap: wrap;
     column-gap: 32px;
     row-gap: 32px;
   }
+
   .components-hover-object {
     width: 336px;
     height: 270px;
   }
+
   .comp-hover-content{
     width: 280px;
     height: 214px;
@@ -181,38 +206,46 @@
   .components-container {
     width: 1200px;
   }
+
   .components-container  .container {
     width: 1200px;
   }
+
   .components-list {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
   }
+
   .components-img-wrap {
     width: 270px;
     height: 270px;
   }
+
   .components-img-wrap img{
     width:206px;
     height: 160px;
   }
+
   .components-title {
     width: 411px;
     font-size: 24px;
     line-height: calc(28 / 24);
     letter-spacing: -0.03em;
   }
+
   .components-title + .components-text {
     width: 486px;
     margin: 0 auto;
     margin-top: 28px;
     margin-bottom: 50px;
   }
+
   .components-hover-object {
     width: 270px;
     height: 270px;
   }
+  
   .comp-hover-content{
     width: 214px;
     height: 214px;

@@ -58,9 +58,9 @@
   --sliders: rgba(17, 17, 17, 0.1);
   --reviews-text: rgba(17, 17, 17, 0.7);
   --advantages-text: rgba(255, 255, 255, 0.7);
-  --ul:  #4C4C4C;
+  --ul: #4C4C4C;
   --ul-color: #ECEDED;
-
+  --border: rgba(255, 255, 255, 0.5);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
