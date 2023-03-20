@@ -1,3 +1,7 @@
+.reviews-section {
+  padding-bottom: 72px;
+}
+
 .reviews-title {
   font-weight: 600;
   font-size: 20px;
@@ -56,6 +60,53 @@
   border-radius: 50%;
 }
 
+.reviews-section .slick-dots {
+  bottom: -20px;
+}
+
+.reviews-section .slick-dotted.slick-slider {
+  margin-bottom: 65px;
+}
+
+.reviews-section .slick-dots li button:before {
+  background-color: rgba(17, 17, 17, 0.7);
+  top: 10px;
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  line-height: normal;
+}
+
+.reviews-section .slick-dots li.slick-active button:before {
+  background-color: var(--buy-now);
+  width: 28px;
+  border-radius: 15px;
+  transform: translateX(-25%);
+}
+
+.review-btn {
+  display: block;
+  width: 222px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--elipse-b);
+  background-color: transparent;
+  border: 1px solid var(--buy-now);
+  border-radius: 100px;
+  margin: 0 auto;
+  transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
+}
+
+.review-btn:is(:hover, :focus) {
+  background-color: var(--buy-now);
+  color: var(--button-text);
+}
+
 @media screen and (min-width: 380px) {
   .review-card {
     max-width: 335px;
@@ -81,6 +132,15 @@
   .reviews-list {
     margin-bottom: 95px;
   }
+  .reviews-section .slick-dots {
+    bottom: -31px;
+  }
+  .reviews-section .slick-dotted.slick-slider {
+    margin-bottom: 94px;
+  }
+  .reviews-section {
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -95,26 +155,8 @@
   .reviews-list {
     column-gap: 28px;
   }
-}
 
-.review-btn {
-  display: block;
-  width: 222px;
-  height: 50px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  color: var(--elipse-b);
-  background-color: transparent;
-  border: 1px solid var(--buy-now);
-  border-radius: 100px;
-  margin: 0 auto;
-  transition: background-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier);
-}
-
-.review-btn:is(:hover, :focus) {
-  background-color: var(--buy-now);
-  color: var(--button-text);
+  .reviews-section {
+    padding-bottom: 128px;
+  }
 }
