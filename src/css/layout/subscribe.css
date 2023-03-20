@@ -1,0 +1,64 @@
+.section-subscribe {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+            url(./img/Subcribe.jpg);
+            padding-top: 62px;
+            padding-bottom: 63px;
+   
+}
+
+.titel-subscribe{
+margin-left: auto;
+margin-right: auto;
+width: 291px;
+text-align: center;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;    
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: -0.03em;
+color: #fff;
+margin-bottom: 24px;
+
+}
+
+.text-subscribe{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    width: 326px;
+    margin-bottom: 24px;
+}
+
+.button-subscribe{
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: 128px;
+    height: 41px;
+    background-color: #FD9222;
+    border-radius: 100px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    color: #fff;
+    font-family: 'Montserrat';
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.2;
+}
+
