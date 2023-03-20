@@ -38,8 +38,8 @@
                     <div>
                         <p class="input-text"><label for="user_name">Personal information</label></p>
                         <ul class="scrypt">
-                            <li class="item-form"><input id="user_name" type="text" class="modal-input" placeholder="Name" required ></li>
-                            <li class="item-form"><input type="text" class="modal-input" placeholder="Surname" required ></li>
+                            <li class="item-form"><input id="user_name" type="text" class="modal-input" placeholder="Name" required ></input></li>
+                            <li class="item-form"><input type="text" class="modal-input" placeholder="Surname" required ></input></li>
                         </ul>
                     </div>
                 </li>
