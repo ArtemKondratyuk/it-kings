@@ -12,10 +12,10 @@
 }
 
 .site-nav {
+  display: flex;
   justify-content: space-between;
   margin-right: 188px;
-  
-  display: flex;
+
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
