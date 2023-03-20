@@ -1,12 +1,13 @@
 *,::before,
   ::after {
-    box-sizing: border-box;
-    padding: 0px;
-    margin: 0px;
-  }
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
 
 body {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 400;
-    background-color: var(--button-background); 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  background-color: var(--button-background);
+  margin: 0;
 }
