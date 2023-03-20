@@ -12,7 +12,6 @@
 }
 
 .site-nav {
-  display: flex;
   justify-content: space-between;
   margin-right: 188px;
 
@@ -65,7 +64,6 @@
 }
 
 .site-nav {
-  display: flex;
   justify-content: space-between;
   margin-right: 188px;
 
