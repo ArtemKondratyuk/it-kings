@@ -94,3 +94,45 @@ footer {
 
   letter-spacing: -0.02em;
 }
+
+.name{
+    color:#FD9222;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 32px;
+    margin-top: 50px;
+    margin-right: 32px;
+}
+
+.nav-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.contacts {
+    list-style: none;
+}
+
+.icon{
+    display: flex;
+    align-items: flex-end;
+    
+}
+
+.icons {
+    
+}
+
+.nav-footer {
+
+}
+
+.contact-us {
+    margin-bottom: 12px;
+}
