@@ -6,7 +6,8 @@
         flex-wrap: wrap;   
         background-image:
         linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), url(./img/chocolate-covered-cocoa-powder-t.jpg); 
+                rgba(46, 47, 66, 0.7)), 
+                url(./img/chocolate-covered-cocoa-powder-m.jpg); 
 }
 
 .hero-section .container{
