@@ -24,6 +24,7 @@
         padding-right: 20px;
         margin-bottom: 32px;
 }
+
 .hero-button{
         display: flex;
         background-color: #FD9222;
@@ -72,6 +73,13 @@ align-items: center
     height: 28px;
     border-radius: 50%;
     border: none;
+    display: flex;
+}
+.scroll-menu {
+    height: 12.83px;
+    fill: #FD9222;  
+    margin-top: 8px;
+    margin-left: 8px;
 }
 
 @media screen and (min-width: 380px) {
