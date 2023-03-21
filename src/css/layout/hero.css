@@ -9,20 +9,23 @@
                 rgba(46, 47, 66, 0.7)), url(./img/chocolate-covered-cocoa-powder-t.jpg); 
 }
 
+.hero-section .container{
+    padding-top: 395px;
+    padding-bottom: 20px;
+}
 .titel-hero{
     font-family: 'Montserrat';
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         color: #fff;
-        margin-top: 395px;
         text-align: left;
         padding-left: 20px;
         padding-right: 20px;
+        margin-bottom: 32px;
 }
+
 .hero-button{
-    margin-right: auto;
-        margin-left: auto;
         display: flex;
         background-color: #FD9222;
         border-radius: 100px;
@@ -38,15 +41,104 @@
         line-height: 1.2;
         margin-right: 14px;
 }
+.button-group{
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+        margin-right: auto;
+        margin-bottom: 32px;
+}
 .hero-button.none{
 background-color: rgba(28, 28, 28, 0);
 border: 1px solid #FFFFFF;
 }
 
+.scroll-group{
+display: flex;
+margin-left: 20px;
+margin-right: auto;
+align-items: center
+
+}
+
 .scroll-hero{
     font-family: 'Montserrat';
-        font-weight: 500;
         font-size: 12px;
         line-height: 1.16;
-        color: #FFFFFF;
+        color: #fff;
+        margin-right: 12px;
+}
+.scroll-button{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+}
+.scroll-menu {
+    height: 12.83px;
+    fill: #FD9222;  
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+@media screen and (min-width: 380px) {
+    .hero-section .container {
+        width: 375px;
+    }
+        .hero-section{
+            max-width: 375px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-section .container {
+            width: 744px;
+            padding-top: 671px;
+                padding-bottom: 40px;
+        }
+             .hero-section {
+                    max-width: 744px;
+                }
+        .titel-hero {
+            font-family: 'Montserrat';
+            font-size: 28px;
+            line-height: 1.21;
+            color: #fff;
+            text-align: left;
+            padding-left: 40px;
+            padding-right: auto;
+            margin-bottom: 32px;
+            width: 484px;
+        }
+ 
+.button-group{
+    margin-left: 40px;
+    margin-right: 153px;
+    margin-bottom: 0;
+}
+.scroll-group{
+        margin-right: 0;
+        margin-left: 0;
+}
+.hero-allbutton{
+    display: flex;
+    align-items: center
+}
+}
+
+@media screen and (min-width: 1200px){
+    .hero-section .container {
+            width: 1176px;
+            padding-top: 381px;
+            padding-bottom: 40px;
+        }
+    
+        .hero-section {
+            max-width: 1176px;
+        }
+        .button-group {
+             margin-right: 585px;
+             margin-bottom: 0;
+                 }
 }

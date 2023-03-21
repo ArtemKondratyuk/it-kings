@@ -70,3 +70,16 @@ margin-bottom: 32px;
         font-size: 14px;
         line-height: 1.28;
 }
+
+
+@media screen and (min-width: 380px){
+   .section-top .container {
+            width: 375px;
+        }
+}
+
+@media screen and (min-width: 768px){
+    .section-top .container {
+            width: 744px;
+        }
+}
