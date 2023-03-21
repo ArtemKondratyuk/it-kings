@@ -1,15 +1,4 @@
 /* Section HOW IT'S MADE? */
-:root {
-  --trans-time: 250ms;
-  --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
-}
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
