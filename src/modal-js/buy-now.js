@@ -9,7 +9,7 @@
         <ul class="list-chocolate-selection">
             <li>
                 <div class="cont-chocolate-selection">
-                    <img src="./img/chocolate-100-mob-x1.png" srcset="./img/chocolate-100-mob-x1png 1x, ./img/chocolate-100-mob-x1.png 2x" alt="chocolate-100" width="167" class="chocolate-100"></img>
+                    <img src="./img/chocolate-100.png" srcset="./img/chocolate-100.png 1x, ./img/chocolate-100.png 2x" alt="chocolate-100" width="167" class="chocolate-100"></img>
                     <button class="weight">
                         100 g
                     </button>
@@ -17,7 +17,7 @@
             </li>
             <li>
                 <div class="cont-chocolate-selection">
-                    <img src="./img/chocolate 200-mob-x1.png" srcset="./img/chocolate 200-mob-x1png 1x, ./img/chocolate 200-mob-x1.png 2x" alt="chocolate 200" width="167" class="chocolate 200"></img>
+                    <img src="./img/chocolate 200.png" srcset="./img/chocolate 200.png 1x, ./img/chocolate 200.png 2x" alt="chocolate 200" width="167" class="chocolate 200"></img>
                     <button class="weight">
                         200 g
                     </button>
@@ -25,7 +25,7 @@
             </li>
             <li>
                 <div class="cont-chocolate-selection">
-                    <img src="./img/chocolate 300-mob-x1.png" srcset="./img/chocolate 300-mob-x1png 1x, ./img/chocolate 300-mob-x1.png 2x" alt="chocolate 300" width="167" class="chocolate 300"></img>
+                    <img src="./img/chocolate 300.png" srcset="./img/chocolate 300.png 1x, ./img/chocolate 300.png 2x" alt="chocolate 300" width="167" class="chocolate 300"></img>
                     <button class="weight">
                         300 g
                     </button>
