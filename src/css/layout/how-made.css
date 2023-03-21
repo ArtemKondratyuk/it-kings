@@ -1,6 +1,30 @@
 /* Section HOW IT'S MADE? */
+:root {
+  --trans-time: 250ms;
+  --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .how-made {
   padding-bottom: 72px;
+}
+
+.how-made-container {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
 }
 
 .how-made-heading {
@@ -44,7 +68,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -64,29 +87,28 @@
   width: 40px;
   height: 40px;
   color: #f5f4f4;
+  background-color: transparent;
   border: 1px solid #f5f4f4;
   border-radius: 50%;
-  /* z-index: 3; */
+  /* transform: translate(-50%, -50%) scaleY(1); */
+  /* transition: transform var(--trans-time) var(--trans-func); */
 }
 
-.how-made-video-link:hover {
+.how-made-video-link:is(:hover, :focus) {
   color: var(--buy-now);
   border-color: var(--buy-now);
-  /* z-index: 0; */
+}
+
+.how-made-video-link:is(:active, :visited) .how-made-video-link {
+  transform: translate(100%, 100%);
 }
 
 .how-made-icon {
+  /* outline: 1px solid tomato; */
   width: 14px;
   height: 15px;
   padding: 11px 8px 9px 13px;
   fill: currentColor;
-}
-
-.how-made-video-link:active {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  display: none;
 }
 
 .how-made-recipe-wrap {
@@ -128,33 +150,27 @@
   left: -16px;
   width: 8px;
   height: 8px;
-  background: #4c4c4c;
-  border: 1px solid #eceded;
+  background: var(--ul);
+  border: 1px solid var(--ul-color);
   border-radius: 50%;
   margin-right: 8px;
 }
 
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
-  .how-made > .container {
+  .how-made-container {
     max-width: 335px;
   }
 }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
-  .how-made > .container {
+  .how-made-container {
     max-width: 614px;
-  }
-
-  .how-made-video-wrap {
-    max-width: 614px;
-    height: 400px;
   }
 
   .how-made-recipe-wrap {
-    max-width: 614px;
-    height: 356px;
+    padding: 32px;
   }
 
   .how-made-video-link {
@@ -169,9 +185,13 @@
   }
 }
 
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
-  .how-made > .container {
+  .how-made-container {
     max-width: 1136px;
   }
 

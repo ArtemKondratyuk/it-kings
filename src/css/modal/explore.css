@@ -1,5 +1,14 @@
+:root {
+  /* Input Field */
+  --border: 1.5px solid rgba(17, 17, 17, 0.05);
+  --filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  /* Transitions */
+  --trans-time: 250ms;
+  --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* Overlay */
-.backdrop {
+.explore-backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,193 +20,140 @@
 }
 
 /* Modal Window */
-.modal {
+.explore-modal {
   position: absolute;
   top: 50%;
   left: 50%;
-
   width: 100%;
-  padding: 24px 16px;
-
-  background-color: #fcfcfc;
-  border-radius: var(--b-radius);
-
-  box-shadow: var(--modal-shadow);
+  height: 350px;
+  padding: 21px 20px 32px 24px;
+  background-color: var(--button-background);
+  background-image: url(/img/tetiana-bykovets-1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
 
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform var(--trans-time) var(--trans-func);
 }
 
-.backdrop.is-hidden .modal {
+.explore-backdrop.is-hidden .explore-modal {
   transform: translate(-50%, -50%) scaleY(0);
 }
 
 /* Modal Close Button */
-.modal-close {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  width: 24px;
-  height: 24px;
-
-  background-color: var(--accent);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
+.explore-modal-close {
+  display: block;
   margin-left: auto;
-  margin-bottom: 24px;
-
-  transition: color var(--trans-time) var(--trans-func),
-    background-color var(--trans-time) var(--trans-func);
+  margin-bottom: 168px;
+  background-color: transparent;
+  border: none;
+  color: var(--button-text);
+  transition: color var(--trans-time) var(--trans-func);
 }
 
-.modal-close:is(:hover, :focus) {
-  color: var(--main-bg);
-  background-color: var(--pressed);
+.explore-modal-close:is(:hover, :focus) {
+  color: var(--buy-now);
 }
 
-.modal-close-icon {
-  width: 8px;
-  height: 8px;
+.explore-modal-close-icon {
+  width: 12px;
+  height: 12px;
   fill: currentColor;
 }
 
-.modal-title {
-  font-weight: 500;
-  font-size: 13px;
-  line-height: 1.5;
-  text-align: center;
-  letter-spacing: 0.02em;
+.explore-modal-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--elipse-b);
+  max-width: 260px;
+}
 
-  color: var(--heading);
+.explore-modal-heading span {
+  color: var(--buy-now);
+}
 
-  margin-bottom: 16px;
+.explore-subscribe {
+  padding: 32px;
 }
 
 /* Form */
-.fields-wrap {
+.explore-subscribe-form {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-subscribe-label {
+  width: 100%;
+  max-width: 398px;
+}
+
+.explore-subscribe-input {
+  display: flex;
   align-items: flex-start;
-  gap: 8px;
-
-  margin-bottom: 24px;
-}
-
-.form-field {
-  width: 100%;
-}
-
-.form-label {
-  display: inline-block;
-
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: var(--subtle-text);
-
-  margin-bottom: 4px;
-}
-
-.input-wrap {
-  position: relative;
-}
-
-.input-field {
-  width: 100%;
-
-  color: var(--main-text);
-
+  padding: 14px 18px;
+  /* gap: 40px; */
+  width: 263px;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
   background-color: transparent;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: var(--b-radius);
-
   outline: transparent;
-
-  transition: border-color var(--trans-time) var(--trans-func);
 }
 
-.form-input {
-  height: 40px;
-  padding-left: 38px;
+.explore-subscribe-input::placeholder {
+  /* font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
 }
 
-.form-input:is(:hover, :focus),
-.form-textarea:is(:hover, :focus) {
-  border-color: var(--brand);
-}
-
-.form-icon {
-  position: absolute;
-  top: 50%;
-  left: 16px;
-  transform: translateY(-50%);
-
-  width: 18px;
-  height: 24px;
-
-  fill: var(--heading);
-
-  transition: fill var(--trans-time) var(--trans-func);
-}
-
-.form-input:is(:hover, :focus) + .form-icon {
-  fill: var(--brand);
-}
-
-/* Form Textarea */
-.form-textarea {
-  height: 120px;
-  resize: none;
-
-  padding: 8px 16px;
-}
-
-.form-textarea::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
-
-/* Form Checkbox */
-.checkbox-wrap {
-  margin-top: 8px;
-  /* position: relative; */
-}
-
-.check-privacy {
+.explore-subscribe-submit {
   /* display: flex;
+  justify-content: center;
   align-items: center; */
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #757575;
-
-  /* text-align: center; */
+  width: 100px;
+  height: 45px;
+  background: var(--buy-now);
+  border-radius: 100px;
 }
 
-.privacy-policy {
-  line-height: 1.5;
-  color: var(--brand);
+.explore-subscribe-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--button-text);
 }
 
-.check-icon {
-  width: 16px;
-  height: 16px;
-
-  border: 1.25px solid var(--heading);
-  border-radius: 2px;
-
-  margin-right: 8px;
-
-  fill: transparent;
+/* Mobile Styles */
+@media screen and (min-width: 375px) {
+  .explore-modal {
+    max-width: 311px;
+  }
 }
 
-.form-checkbox:checked + .check-privacy span {
-  border: none;
-  background-color: var(--pressed);
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .explore-modal {
+    max-width: 583px;
+    height: 412px;
+  }
 
-  fill: var(--light-bg);
+  .explore-modal-close {
+    margin-bottom: 191px;
+  }
+
+  .explore-subscribe {
+    padding: 40px;
+  }
 }
