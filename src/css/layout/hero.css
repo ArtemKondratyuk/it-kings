@@ -1,22 +1,22 @@
 .hero-section{
     margin-left: auto;
         margin-right: auto;
+        padding-left: 20px;
+        padding-right: 20px;
         width: 100%;
         display: flex;
-        flex-wrap: wrap;   
-        background-image:
-        linear-gradient(rgba(46, 47, 66, 0.7),
-                rgba(46, 47, 66, 0.7)), 
-                url(./img/chocolate-covered-cocoa-powder-m.jpg); 
+        flex-wrap: wrap;
+        margin-bottom: 72px;
 }
-
 .hero-section .container{
-    padding-top: 395px;
+    padding-top: 355px;
     padding-bottom: 20px;
+    background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+            url(../img/chocolate-covered-cocoa-powder-m.jpg);
+        border-radius: 30px;
 }
 .titel-hero{
     font-family: 'Montserrat';
-        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         color: #fff;
@@ -25,7 +25,6 @@
         padding-right: 20px;
         margin-bottom: 32px;
 }
-
 .hero-button{
         display: flex;
         background-color: #FD9222;
@@ -53,15 +52,12 @@
 background-color: rgba(28, 28, 28, 0);
 border: 1px solid #FFFFFF;
 }
-
 .scroll-group{
 display: flex;
 margin-left: 20px;
 margin-right: auto;
 align-items: center
-
 }
-
 .scroll-hero{
     font-family: 'Montserrat';
         font-size: 12px;
@@ -78,11 +74,10 @@ align-items: center
 }
 .scroll-menu {
     height: 12.83px;
-    fill: #FD9222;  
+    fill: #FD9222;
     margin-top: 8px;
     margin-left: 8px;
 }
-
 @media screen and (min-width: 380px) {
     .hero-section .container {
         width: 375px;
@@ -91,14 +86,15 @@ align-items: center
             max-width: 375px;
         }
 }
-
 @media screen and (min-width: 768px) {
     .hero-section .container {
             width: 744px;
             padding-top: 671px;
                 padding-bottom: 40px;
+                background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                        url(../img/chocolate-covered-cocoa-powder-t.jpg);
         }
-             .hero-section {
+    .hero-section {
                     max-width: 744px;
                 }
         .titel-hero {
@@ -112,7 +108,6 @@ align-items: center
             margin-bottom: 32px;
             width: 484px;
         }
- 
 .button-group{
     margin-left: 40px;
     margin-right: 153px;
@@ -127,15 +122,15 @@ align-items: center
     align-items: center
 }
 }
-
 @media screen and (min-width: 1200px){
     .hero-section .container {
             width: 1176px;
             padding-top: 381px;
             padding-bottom: 40px;
+            background-image: linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+                    url(../img/chocolate-covered-cocoa-powder-d.jpg);
         }
-    
-        .hero-section {
+    .hero-section {
             max-width: 1176px;
         }
         .button-group {
