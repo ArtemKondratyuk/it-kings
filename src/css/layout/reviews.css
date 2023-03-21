@@ -27,6 +27,7 @@
 
 .review-card {
   width: 100%;
+  height: 200px;
   padding: 56px 18px 42px 18px;
   background: var(--button-text);
   border: 1px solid var(--sliders);
@@ -60,6 +61,28 @@
   border-radius: 50%;
 }
 
+.review-btn {
+  display: block;
+  width: 222px;
+  height: 50px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  color: var(--elipse-b);
+  background-color: transparent;
+  border: 1px solid var(--buy-now);
+  border-radius: 100px;
+  margin: 0 auto;
+  transition: background-color 250ms var(--cubic-bezier),
+    color 250ms var(--cubic-bezier);
+}
+
+.review-btn:is(:hover, :focus) {
+  background-color: var(--buy-now);
+  color: var(--button-text);
+}
+
 .reviews-section .slick-dots {
   bottom: -20px;
 }
@@ -85,44 +108,22 @@
   transform: translateX(-25%);
 }
 
-.review-btn {
-  display: block;
-  width: 222px;
-  height: 50px;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 1.22;
-  text-align: center;
-  color: var(--elipse-b);
-  background-color: transparent;
-  border: 1px solid var(--buy-now);
-  border-radius: 100px;
-  margin: 0 auto;
-  transition: background-color 250ms var(--cubic-bezier),
-    color 250ms var(--cubic-bezier);
-}
-
-.review-btn:is(:hover, :focus) {
-  background-color: var(--buy-now);
-  color: var(--button-text);
-}
-
 @media screen and (min-width: 380px) {
-  .review-card {
+  .review-slide {
     max-width: 335px;
   }
 
   .reviews-section > .container {
-    width: 375px;
+    max-width: 375px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .reviews-section > .container {
-    width: 744px;
+    max-width: 744px;
   }
-  .review-card {
-    max-width: 344px;
+  .review-slide {
+    max-width: 345px;
   }
 
   .reviews-title {
@@ -141,11 +142,14 @@
   .reviews-section {
     padding-bottom: 100px;
   }
+  .review-slide:not(:last-child) {
+    margin-right: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .reviews-section > .container {
-    width: 1176px;
+    max-width: 1176px;
   }
 
   .review-card {
@@ -159,4 +163,13 @@
   .reviews-section {
     padding-bottom: 128px;
   }
+
+  .review-slide:not(:last-child) {
+    margin-right: 28px;
+  }
 }
+
+/* .reviews-section .slick-list {
+  overflow: visible;
+  overflow-x: hidden;
+ } */
