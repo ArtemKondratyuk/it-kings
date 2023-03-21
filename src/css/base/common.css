@@ -1,8 +1,8 @@
 * ::before,
-  ::after  {
+::after {
   box-sizing: border-box;
   padding: 0px;
-  margin: 0px;  
+  margin: 0px;
 }
 
 body {
@@ -11,5 +11,3 @@ body {
   background-color: var(--button-background);
   margin: 0;
 }
-
-
