@@ -26,8 +26,8 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/it-kings/assets/index-fb97fc22.js"></script>
-    <link rel="stylesheet" href="/it-kings/assets/index-418661dc.css">
+    <script type="module" crossorigin src="/it-kings/assets/index-634bf7a1.js"></script>
+    <link rel="stylesheet" href="/it-kings/assets/index-a89a1440.css">
   </head>
   <body>
     <!-- header -->
@@ -258,10 +258,74 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
 
 
       <!-- section how-made -->
-      <section>
-
-    
+      <section class="how-made">
+  <div class="how-made-container">
+    <h2 class="how-made-heading">How it's <span>made?</span></h2>
+    <div class="how-made-wrap">
+      <div class="how-made-video-wrap box">
+        <div class="how-made-poster box">
+          <picture>
+            <source srcset="/it-kings/assets/image-0f0e7ccc.jpg " media="(min-width: 1200px)" />
+            <source srcset="/it-kings/assets/image-t-df175465.jpg " media="(min-width: 768px)" />
+            <source srcset="/it-kings/assets/image-m-bf992100.jpg " media="(max-width: 767px)" />
+            <img src="/it-kings/assets/image-m-bf992100.jpg" alt="Chocolate in the bowl" />
+          </picture>
+        </div>
+        <iframe
+          class="how-made-video box"
+          src=""
+          name="iframe-a"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          >How Ukrainian handmade chocolate is made
+        </iframe>
+        <a
+          class="how-made-video-link"
+          target="iframe-a"
+          href="https://www.youtube.com/embed/41UbWmXKWkc?autoplay=1&controls=0"
+          title="How Ukrainian handmade chocolate is made"
+        >
+          <svg class="how-made-icon">
+            <use href="/it-kings/assets/icons-e49917f7.svg#icon-xclose"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="how-made-recipe-wrap box">
+        <h3 class="how-made-title">
+          Try our chocolates today and discover the perfect balance of flavor
+        </h3>
+        <ul class="how-made-list">
+          <li class="how-made-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add sugar
+            and cocoa powder.
+          </li>
+          <li class="how-made-item">
+            At the same time, prepare a water bath. Melt the butter on it.
+          </li>
+          <li class="how-made-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and silky.
+          </li>
+          <li class="how-made-item">
+            Heat the mixture over low heat, letting it barely boil.
+          </li>
+          <li class="how-made-item">
+            Pour the chocolate into special containers (can be replaced with ice
+            molds). Allow to cool and harden.
+          </li>
+        </ul>
+        <!-- Button for Explore-Pop-Up -->
+        <!-- <button style="margin-top: 20px" type="submit" data-modal-open>
+          Subscribe
+        </button> -->
+        <!--  -->
+      </div>
+    </div>
+  </div>
 </section>
+
+<script src="../modal-js/explore.js"></script>
+
 
       <!-- section products -->
       <section class="products section">
@@ -565,7 +629,35 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
 </section> -->
     
     
-    
+    <!-- Modal Window-->
+<div class="explore-backdrop is-hidden" data-modal>
+  <div class="explore-modal box">
+    <button class="explore-modal-close" type="button" data-modal-close>
+      <svg class="explore-modal-close-icon">
+        <use href="/it-kings/assets/icons-e49917f7.svg#icon-xclose"></use>
+      </svg>
+    </button>
+    <p class="explore-modal-heading">
+      Explore our <span>new&nbsp;chocolate</span> first!
+    </p>
+    <div class="explore-subscribe">
+      <form class="explore-subscribe-form">
+        <label class="explore-subscribe-label">
+          <input
+            class="explore-subscribe-input"
+            type="email"
+            name="email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <button class="explore-subscribe-submit" type="submit">
+          <span class="explore-subscribe-text">Submit</span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
 
     <!-- footer -->
     <footer class="footer">
