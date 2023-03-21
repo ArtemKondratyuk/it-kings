@@ -1,8 +1,7 @@
-.section-subscribe {
+.section-subscribe .container {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    display: flex;
     flex-wrap: wrap;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
@@ -45,6 +44,8 @@ margin-bottom: 24px;
 .button-subscribe{
     margin-right: auto;
     margin-left: auto;
+    justify-content: center;
+    align-items: center;
     display: flex;
     width: 128px;
     height: 41px;
@@ -62,3 +63,43 @@ margin-bottom: 24px;
         line-height: 1.2;
 }
 
+@media screen and (min-width: 380px) {
+    .section-subscribe .container {
+        width: 375px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .section-subscribe .container {
+        width: 744px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-top: 72px;
+            padding-bottom: 72px;
+    }
+        .titel-subscribe{
+                width: 378px;
+                font-size: 24px;
+                line-height: 1.16;
+                letter-spacing: -0.03em;
+            }
+        .text-subscribe {
+            color: #fff;
+            width: 467px;
+            justify-content: center;
+
+        }
+                .button-subscribe {
+                    width: 172px;
+                    height: 50px;
+                    font-size: 18px;
+                    line-height: 1.2;
+                }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-subscribe .container {
+        width: 1176px;
+    }
+}
