@@ -1,10 +1,4 @@
 /* Section HOW IT'S MADE? */
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
 .how-made {
   padding-bottom: 72px;
 }
