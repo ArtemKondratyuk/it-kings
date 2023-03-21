@@ -61,7 +61,9 @@ margin-bottom: 32px;
 
 .top-img{
     margin-bottom: 20px;
-
+}
+.top-image {
+    border-radius: 15px;
 }
 
 .top-text{
@@ -110,9 +112,10 @@ margin-bottom: 32px;
 
     .top-img {
         margin-right: 20px;
-        border-radius: 15px;
         margin-bottom: 32px;
     }
+
+    
     .button-text-top {display: flex;}
     .text-none{
         width: 306px;
