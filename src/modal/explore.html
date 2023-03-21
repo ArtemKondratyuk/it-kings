@@ -1,0 +1,35 @@
+<!-- Modal Window-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-close" type="button" data-modal-close>
+      <svg class="modal-close-icon">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+
+    <p class="modal-title">Leave your contacts and we will call you back</p>
+
+    <form class="modal-form">
+      <div class="fields-wrap">
+        <div class="form-field">
+          <label class="form-label" for="user-email">Email</label>
+          <div class="input-wrap">
+            <input
+              class="form-input input-field"
+              type="email"
+              name="user-email"
+              id="user-email"
+              placeholder=" "
+              required
+            />
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" class="">Submit</button>
+    </form>
+  </div>
+</div>
