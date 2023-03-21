@@ -26,25 +26,26 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
-    <script type="module" crossorigin src="/it-kings/assets/index-fb97fc22.js"></script>
-    <link rel="stylesheet" href="/it-kings/assets/index-a89a1440.css">
+    <script type="module" crossorigin src="/it-kings/assets/index-5857f1ba.js"></script>
+    <link rel="stylesheet" href="/it-kings/assets/index-9d9298da.css">
   </head>
   <body>
     <!-- header -->
 
     <header class="header container">
   <nav class="main-nav">
-  <div class="simple">
-    <div class="name">
-      <a href="./index.html">
-        <h1 class="logo">SIMPLY CHOCOLATE</h1>
-      </a>
+    <div class="simple">
+      <div class="name">
+        <a href="./index.html">
+          <h1 class="logo">SIMPLY CHOCOLATE</h1>
+        </a>
+      </div>
+
+      <svg class="chocolate" width="24px" height="24px">
+        <use href="/it-kings/assets/icons-e49917f7.svg#icon-favicon"></use>
+      </svg>
     </div>
 
-    <svg class="chocolate" width="24px" height="24px">
-      <use href="/it-kings/assets/icons-e49917f7.svg#icon-favicon"></use>
-    </svg>
-  </div>
     <ul class="site-nav">
       <li class="nav-list"><a href="">Home</a></li>
       <li class="nav-list"><a href="">How-made?</a></li>
@@ -62,9 +63,66 @@
         <use href="/it-kings/assets/icons-e49917f7.svg#icon-twitter"></use>
       </svg>
     </div>
+    <div class="mob-menu-btn">
+      <button
+        class="menu-burger js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="24px" height="16px">
+          <use href="../img/icons.svg#icon-burger1" class="menu-icon"></use>
+        </svg>
+      </button>
+    </div>
   </nav>
 
+  <div class="mobile-menu js-menu-container" id="mobile-menu">
+    <div class="container">
+      <div class="mobile-menu-wrap">
+        <button type="button" class="menu-close-btn js-close-menu">
+          <svg class="menu-close-icon">
+            <use href="../img/icons.svg#icon-xclose"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item current">
+            <a href="./mob-menu.html" class="mobile-menu-link">Home</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">How it’s made?</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Our products</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Top sellers</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Chocolate is loved</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class="mobile-soc-list">
+        <li class="mobile-soc-item">
+          <a class="mobile-soc-link" href="">
+            <svg class="mobile-soc-icon insta">
+              <use href="../img/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mobile-soc-item">
+          <a class="mobile-soc-link twit" href="">
+            <svg class="mobile-soc-icon twit">
+              <use href="../img/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </header>
+
 
     <!-- main -->
 
@@ -701,6 +759,7 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
 
     <!-- js script  -->
 
+    
     
     
     
