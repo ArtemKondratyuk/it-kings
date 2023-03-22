@@ -1,4 +1,4 @@
-{/* <section class="backdrop js-menu-container menu-container is-hidden" data-modal data-modal2>
+<section class="backdrop js-menu-container menu-container is-hidden" data-modal data-modal2>
     <div class="modal-buy-now">
         <button type="button" class="btn-close-open js-close-menu" data-modal-close>
       <svg width="24" height="24">
@@ -43,7 +43,7 @@
           alt="chocolate3"
           width="120"
           class=""
-         
+
         />
         <button type="submit" class="weight chocolate-selection">300 g</button>
       </li>
@@ -101,7 +101,7 @@
       <!-- <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div> -->
 
-        
+
             <!-- If we need scrollbar -->
             <div class="swiper-scrollbar"></div>
         </div>
@@ -150,5 +150,5 @@
                 </li>
             </ul>
             <button type="button" class="button-modal-buy" data-modal-close data-modal2-close data-submit-open >Submit</button>
-    
-          </section> */}
+
+          </section>

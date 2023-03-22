@@ -88,7 +88,7 @@
 
 @media screen and (min-width: 1200px) {
   .adv-container {
-    min-width: 1176px;
+    width: 1176px;
   }
 
   .adv-container .container {
@@ -108,12 +108,13 @@
     height: 244px;
     position: relative;
   }
-  .adv-item:not(:first-child)::before{
+
+  .adv-item:not(:first-child)::before {
     content: '';
     display: block;
     width: 124px;
-    height: 2px;
-    background-color:var(--border);
+    height: 0px;
+    border: 1px solid var(--border);
     transform: rotate(90deg);
     transform-origin: left;
     position: absolute;
