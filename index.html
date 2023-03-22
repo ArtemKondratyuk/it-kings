@@ -27,7 +27,7 @@
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
     />
     <script type="module" crossorigin src="/it-kings/assets/index-3c386585.js"></script>
-    <link rel="stylesheet" href="/it-kings/assets/index-e558700c.css">
+    <link rel="stylesheet" href="/it-kings/assets/index-15c0399e.css">
   </head>
   <body>
     <!-- header -->
@@ -317,15 +317,24 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
 
       <!-- section how-made -->
       <section class="how-made">
-  <div class="how-made-container">
+  <div class="container">
     <h2 class="how-made-heading">How it's <span>made?</span></h2>
     <div class="how-made-wrap">
       <div class="how-made-video-wrap box">
         <div class="how-made-poster box">
           <picture>
-            <source srcset="/it-kings/assets/image-0f0e7ccc.jpg " media="(min-width: 1200px)" />
-            <source srcset="/it-kings/assets/image-t-df175465.jpg " media="(min-width: 768px)" />
-            <source srcset="/it-kings/assets/image-m-bf992100.jpg " media="(max-width: 767px)" />
+            <source
+              srcset="./img/image.jpg 1x, ./img/image-2x.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="/it-kings/assets/image-t-df175465.jpg 1x, /it-kings/assets/image-t-2x-dab21d48.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./img/image-m.jpg 1x, ./img/image-m-2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
             <img src="/it-kings/assets/image-m-bf992100.jpg" alt="Chocolate in the bowl" />
           </picture>
         </div>
@@ -344,7 +353,7 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
           title="How Ukrainian handmade chocolate is made"
         >
           <svg class="how-made-icon">
-            <use href="/it-kings/assets/icons-e49917f7.svg#icon-xclose"></use>
+            <use href="/it-kings/assets/icons-e49917f7.svg#icon-play"></use>
           </svg>
         </a>
       </div>
@@ -372,11 +381,6 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
             molds). Allow to cool and harden.
           </li>
         </ul>
-        <!-- Button for Explore-Pop-Up -->
-        <!-- <button style="margin-top: 20px" type="submit" data-modal-open>
-          Subscribe
-        </button> -->
-        <!--  -->
       </div>
     </div>
   </div>
@@ -688,17 +692,18 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
     
     
     <!-- Modal Window-->
-<div class="explore-backdrop is-hidden" data-modal>
+<div class="explore-backdrop" data-modal>
   <div class="explore-modal box">
     <button class="explore-modal-close" type="button" data-modal-close>
       <svg class="explore-modal-close-icon">
         <use href="/it-kings/assets/icons-e49917f7.svg#icon-xclose"></use>
       </svg>
     </button>
-    <p class="explore-modal-heading">
-      Explore our <span>new&nbsp;chocolate</span> first!
-    </p>
+
     <div class="explore-subscribe">
+      <p class="explore-modal-title">
+        Explore our <span>new&nbsp;chocolate</span> first!
+      </p>
       <form class="explore-subscribe-form">
         <label class="explore-subscribe-label">
           <input
@@ -708,9 +713,7 @@ src= "/it-kings/assets/kisspng-milk-white-chocolate-2-bc7a49f6.png"
             placeholder="Enter your email"
           />
         </label>
-        <button class="explore-subscribe-submit" type="submit">
-          <span class="explore-subscribe-text">Submit</span>
-        </button>
+        <button class="explore-subscribe-submit" type="submit">Submit</button>
       </form>
     </div>
   </div>
