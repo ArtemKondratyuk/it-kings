@@ -1,10 +1,14 @@
 footer {
-  background-color: #1e1823;
   color: #fff;
   margin-left: auto;
   margin-right: auto;
+}
+
+.footer > .container {
   padding-top: 32px;
   padding-bottom: 32px;
+  max-width: 375px;
+  background-color: #1e1823;
 }
 
 .name {
@@ -38,7 +42,11 @@ footer {
 }
 
 .icon {
-  fill: currentColor;
+  fill: white;
+}
+
+.icon:is(:hover, :focus) {
+  fill: var(--buy-now);
 }
 
 .icon:not(:last-child) {
@@ -106,16 +114,9 @@ footer {
   display: inline;
 }
 
-.footer > .container {
-  max-width: 375px;
-}
-
 @media screen and (min-width: 768px) {
   .footer > .container {
     max-width: 744px;
-  }
-
-  .footer {
     padding-top: 50px;
     padding-bottom: 50px;
   }
