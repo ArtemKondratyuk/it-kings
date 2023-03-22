@@ -1,13 +1,22 @@
 <section class="how-made">
-  <div class="how-made-container">
+  <div class="container">
     <h2 class="how-made-heading">How it's <span>made?</span></h2>
     <div class="how-made-wrap">
       <div class="how-made-video-wrap box">
         <div class="how-made-poster box">
           <picture>
-            <source srcset="./img/image.jpg" media="(min-width: 1200px)" />
-            <source srcset="./img/image-t.jpg" media="(min-width: 768px)" />
-            <source srcset="./img/image-m.jpg" media="(max-width: 767px)" />
+            <source
+              srcset="./img/image.jpg 1x, ./img/image-2x.jpg 2x"
+              media="(min-width: 1200px)"
+            />
+            <source
+              srcset="./img/image-t.jpg 1x, ./img/image-t-2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./img/image-m.jpg 1x, ./img/image-m-2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
             <img src="./img/image-m.jpg" alt="Chocolate in the bowl" />
           </picture>
         </div>
@@ -26,7 +35,7 @@
           title="How Ukrainian handmade chocolate is made"
         >
           <svg class="how-made-icon">
-            <use href="./img/icons.svg#icon-xclose"></use>
+            <use href="./img/icons.svg#icon-play"></use>
           </svg>
         </a>
       </div>
@@ -54,14 +63,9 @@
             molds). Allow to cool and harden.
           </li>
         </ul>
-        <!-- Button for Explore-Pop-Up -->
-        <button style="margin-top: 20px" type="submit" data-modal-open>
-          Subscribe
-        </button>
-        <!--  -->
       </div>
     </div>
   </div>
 </section>
 
-<script src="../modal-js/explore.js"></script>
+<script src="./modal-js/explore.js"></script>
