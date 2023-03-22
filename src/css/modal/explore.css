@@ -17,7 +17,7 @@
   width: 100%;
   height: 350px;
   background-color: var(--button-background);
-  background-image: url(../img/tetiana-bykovets-m.jpg);
+  background-image: url(/img/tetiana-bykovets-m.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
