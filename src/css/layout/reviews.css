@@ -108,7 +108,7 @@
   margin-top: 42px;
 }
 
-@media screen and (min-width: 380px) {
+@media screen and (min-width: 375px) {
   .reviews-section > .container {
     max-width: 375px;
   }

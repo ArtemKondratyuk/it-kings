@@ -1,4 +1,8 @@
 /* Section HOW IT'S MADE? */
+.box {
+  border-radius: 15px;
+}
+
 .how-made {
   padding-bottom: 72px;
 }
