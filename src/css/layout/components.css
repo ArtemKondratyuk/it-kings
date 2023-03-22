@@ -203,16 +203,16 @@
 
 @media screen and (min-width: 1200px) {
   .components-container {
-    width: 1200px;
+    width: 1176px;
   }
 
   .components-container  .container {
-    width: 1200px;
+    width: 1176px;
   }
 
   .components-list {
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 20px;
   }
 

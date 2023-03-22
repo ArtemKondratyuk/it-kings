@@ -9,13 +9,12 @@ $('.review-responsive').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 380,
+      breakpoint: 1200,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 3,
         slidesToScroll: 1,
       },
     },
-
     {
       breakpoint: 768,
       settings: {
@@ -24,12 +23,13 @@ $('.review-responsive').slick({
       },
     },
     {
-      breakpoint: 1200,
+      breakpoint: 375,
       settings: {
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
       },
     },
+
     // You can unslick at a given breakpoint now by adding:
     // settings: "unslick"
     // instead of a settings object
