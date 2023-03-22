@@ -1,0 +1,141 @@
+.section-top{
+    margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+}
+
+.section-top span{
+    margin-left: auto;
+        margin-right: auto;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #FD9222;
+        margin-bottom: 32px;
+}
+.titel-top{
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #111;
+margin-bottom: 32px;
+}
+
+.top-list{
+    margin-left: auto;
+        margin-right: auto;
+        width: 335px;
+
+}
+
+.top-button {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: 128px;
+    height: 41px;
+    background-color: #FD9222;
+    border-radius: 100px;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 28px;
+    padding-right: 28px;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-bottom: 72px;
+}
+
+.top-img{
+    margin-bottom: 20px;
+}
+.top-image {
+    border-radius: 15px;
+}
+
+.top-text{
+    text-align: left;
+    margin-bottom: 32px;
+    font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 1.28;
+}
+
+.top-img.none{
+    display: none;
+}
+.text-none{
+    display: none;
+}
+@media screen and (min-width: 380px){
+   .section-top .container {
+            width: 375px;
+        }
+}
+
+@media screen and (min-width: 768px){
+    .section-top .container {
+            width: 744px;
+            margin-bottom: 100px;
+        }
+   .titel-top {
+       margin-top: 100px;
+       font-size: 24px;
+       line-height: 1.16;
+       margin-bottom: 50px; }
+
+     .section-top span {margin-top: 100px;
+        font-size: 24px;
+        line-height: 1.16;
+        margin-bottom: 50px;
+    }
+
+
+    .text-none {
+            display: flex;}
+    .top-text{display: none;}
+    .top-list{display: flex;
+    width: 100%;}
+
+    .top-img {
+        margin-right: 20px;
+        margin-bottom: 32px;
+    }
+
+    
+    .button-text-top {display: flex;}
+    .text-none{
+        width: 306px;
+        text-align: left;
+        margin-right: 236px;
+    }
+
+ @media screen and (min-width: 1200px){
+    .section-top .container{
+        width: 1176px;
+        margin-bottom: 128px;
+    }
+    .top-img.none{
+        display: flex;
+    }
+    .text-none {
+        width: 407px;
+        text-align: left;
+        margin-right: 567px;
+    }
+ }
+         
+}
