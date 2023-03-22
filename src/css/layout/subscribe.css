@@ -13,7 +13,7 @@
 .titel-subscribe{
 margin-left: auto;
 margin-right: auto;
-width: 291px;
+max-width: 291px;
 text-align: center;
 font-family: 'Montserrat';
 font-style: normal;
@@ -36,7 +36,6 @@ margin-bottom: 24px;
     margin-left: auto;
     margin-right: auto;
     color: #fff;
-    width: 326px;
     margin-bottom: 24px;
 }
 

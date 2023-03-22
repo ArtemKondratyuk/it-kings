@@ -89,6 +89,7 @@ align-items: center
     border-radius: 50%;
     border: none;
     display: flex;
+    background-color: #fff;
 }
 .scroll-menu {
     height: 12.83px;
