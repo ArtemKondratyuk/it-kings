@@ -34,7 +34,7 @@ margin-bottom: 32px;
 .top-list{
     margin-left: auto;
         margin-right: auto;
-        width: 335px;
+       
 
 }
 
@@ -44,21 +44,27 @@ margin-bottom: 32px;
     display: flex;
     width: 128px;
     height: 41px;
-    background-color: #FD9222;
     border-radius: 100px;
-    border: none;
+    background-color: #FD9222;
+        border: 1px solid #FD9222;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 28px;
     padding-right: 28px;
-    color: #fff;
+    color: #FFF;
     font-family: 'Montserrat';
     font-weight: 600;
     font-size: 14px;
     line-height: 1.2;
     margin-bottom: 72px;
+    transition: background-color 250ms var(--cubic-bezier),
+            color 250ms var(--cubic-bezier);
 }
-
+.top-button:is(:hover, :focus) {
+    background-color: #FCF1E0;
+        color: #FD9222;
+        border: 1px solid #FCF1E0;
+}
 .top-img{
     margin-bottom: 20px;
 }

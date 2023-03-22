@@ -29,7 +29,7 @@ $('.products-responsive').slick({
       },
     },
     {
-      breakpoint: 380,
+      breakpoint: 375,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
