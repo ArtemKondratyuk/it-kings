@@ -1,4 +1,4 @@
-.backdrop {
+/* .backdrop {
     position: fixed;
     left: 0;
     top: 0;
@@ -76,3 +76,14 @@
   .popup img {
     max-width: 100%;
   }
+
+  .modal-image {
+    position: absolute;
+width: 384px;
+height: 362px;
+left: 0px;
+top: 110px;
+
+background: url(ezgif-1-2d3a67b880.png);
+transform: rotate(0deg);
+  } */
