@@ -1,0 +1,159 @@
+:root {
+  /* Input Field */
+  --border: 1.5px solid rgba(17, 17, 17, 0.05);
+  --filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  /* Transitions */
+  --trans-time: 250ms;
+  --trans-func: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Overlay */
+.explore-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  transition: opacity var(--trans-time) var(--trans-func),
+    visibility var(--trans-time) var(--trans-func);
+}
+
+/* Modal Window */
+.explore-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 350px;
+  padding: 21px 20px 32px 24px;
+  background-color: var(--button-background);
+  background-image: url(../img/tetiana-bykovets-m.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform var(--trans-time) var(--trans-func);
+}
+
+.explore-backdrop.is-hidden .explore-modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+/* Modal Close Button */
+.explore-modal-close {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 168px;
+  background-color: transparent;
+  border: none;
+  color: var(--button-text);
+  transition: color var(--trans-time) var(--trans-func);
+}
+
+.explore-modal-close:is(:hover, :focus) {
+  color: var(--buy-now);
+}
+
+.explore-modal-close-icon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.explore-modal-heading {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--elipse-b);
+  max-width: 260px;
+}
+
+.explore-modal-heading span {
+  color: var(--buy-now);
+}
+
+.explore-subscribe {
+  padding: 32px;
+}
+
+/* Form */
+.explore-subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.explore-subscribe-label {
+  width: 100%;
+  max-width: 398px;
+}
+
+.explore-subscribe-input {
+  display: flex;
+  align-items: flex-start;
+  padding: 14px 18px;
+  /* gap: 40px; */
+  width: 263px;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.explore-subscribe-input::placeholder {
+  /* font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400; */
+  font-size: 14px;
+  line-height: 1.21;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+
+.explore-subscribe-submit {
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  width: 100px;
+  height: 45px;
+  background: var(--buy-now);
+  border-radius: 100px;
+}
+
+.explore-subscribe-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--button-text);
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 375px) {
+  .explore-modal {
+    max-width: 311px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .explore-modal {
+    max-width: 583px;
+    height: 412px;
+  }
+
+  .explore-modal-close {
+    margin-bottom: 191px;
+  }
+
+  .explore-subscribe {
+    padding: 40px;
+  }
+}
