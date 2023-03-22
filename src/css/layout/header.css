@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 80px;
-  background-color: #fff;
+  background-color: #FAFAFA;
 }
 
 .container {
@@ -48,6 +48,16 @@
   letter-spacing: -0.03em;
 }
 
+.simply {
+  font-family: 'Montserrat';
+font-style: italic;
+font-weight: 700;
+font-size: 18px;
+line-height: 20px;
+/* identical to box height, or 111% */
+
+letter-spacing: -0.03em;
+}
 .chocolate {
   display: flex;
   margin-left: 24px;
@@ -70,17 +80,16 @@
 }
 
 .logo {
-  width: 185px;
-  height: 20px;
   font-family: 'Montserrat';
-  font-style: italic;
+  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 1.11;
-
+  line-height: 20px;
+  /* identical to box height, or 111% */
+  
   letter-spacing: -0.03em;
-
-  color: var(--elipse-b);
+  
+  color: #111111;
 }
 
 .simple {
