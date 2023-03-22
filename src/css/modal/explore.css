@@ -28,7 +28,7 @@
   height: 350px;
   padding: 21px 20px 32px 24px;
   background-color: var(--button-background);
-  background-image: url(../img/tetiana-bykovets-m.jpg);
+  background-image: url(/img/tetiana-bykovets-m.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
