@@ -96,7 +96,8 @@
   width: 12px;
   height: 12px;
 }
-@media screen and (min-width: 380px) {
+
+@media screen and (min-width: 375px) {
   .header.container {
     max-width: 375px;
   }
@@ -125,6 +126,7 @@
 .menu-burger {
   background-color: var(--button-text);
 }
+
 .menu-icon {
   stroke: var(--elipse-b);
   fill: var(--button-text);
@@ -161,6 +163,7 @@
   flex-direction: column;
   align-items: center;
 }
+
 .menu-close-btn {
   margin-left: auto;
   padding: 0;
@@ -174,6 +177,9 @@
   transition: fill 250ms var(--cubic-bezier);
 }
 
+.menu-close-btn:is(:hover, :focus) {
+  fill: var(--buy-now);
+}
 .menu-close-icon {
   fill: rgba(255, 255, 255, 1);
 }
@@ -194,6 +200,7 @@
   color: var(--button-text);
   transition: fill 250ms var(--cubic-bezier);
 }
+
 .mobile-menu-link:is(:hover, :focus) {
   color: var(--buy-now);
 }
@@ -206,11 +213,13 @@
   bottom: 22px;
   left: 22px;
 }
+
 .mobile-soc-item {
   display: inline-block;
   width: 28px;
   height: 28px;
 }
+
 .mobile-soc-link {
   width: 100%;
   height: 100%;
@@ -221,6 +230,7 @@
   color: var(--button-text);
   transition: fill 250ms var(--cubic-bezier);
 }
+
 .mobile-soc-link:is(:hover, :focus) {
   color: var(--buy-now);
 }
