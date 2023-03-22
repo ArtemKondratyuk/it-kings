@@ -1,4 +1,4 @@
-<section class="backdrop js-menu-container menu-container is-hidden" data-modal data-modal2>
+{/* <section class="backdrop js-menu-container menu-container is-hidden" data-modal data-modal2>
     <div class="modal-buy-now">
         <button type="button" class="btn-close-open js-close-menu" data-modal-close>
       <svg width="24" height="24">
@@ -151,4 +151,4 @@
             </ul>
             <button type="button" class="button-modal-buy" data-modal-close data-modal2-close data-submit-open >Submit</button>
 
-          </section>
+          </section> */}
