@@ -1,14 +1,10 @@
 .section-subscribe .container {
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
     flex-wrap: wrap;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)),
-            url(./img/Subcribe.jpg);
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+            url(../img/subcribe-d.jpg);
             padding-top: 62px;
             padding-bottom: 63px;
-   
 }
 
 .titel-subscribe{
@@ -72,11 +68,11 @@ margin-bottom: 24px;
 @media screen and (min-width: 768px) {
     .section-subscribe .container {
         width: 744px;
-        margin-left: auto;
-        margin-right: auto;
         justify-content: center;
         padding-top: 72px;
-            padding-bottom: 72px;
+         padding-bottom: 72px;
+         background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                    url(../img/subcribe-t.jpg);
     }
         .titel-subscribe{
                 width: 378px;
@@ -101,5 +97,7 @@ margin-bottom: 24px;
 @media screen and (min-width: 1200px) {
     .section-subscribe .container {
         width: 1176px;
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                url(../img/subcribe-d.jpg);
     }
 }
