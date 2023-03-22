@@ -42,7 +42,7 @@
 }
 
 .components-item {
-  width: 320px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,7 +91,12 @@
   margin-left: 28px;
   margin-top: 25px;
 }
-
+.components-img-wrap{
+  width: 300px;
+}
+.components-img-wrap img{
+  width: 224px;
+}
 .components-hover-object {
   width: 336px;
   height: 270px;
@@ -158,6 +163,9 @@
   }
   .components-container .container {
     width: 375px;
+  }
+  .components-img-wrap{
+    width: 335px;
   }
 }
 
