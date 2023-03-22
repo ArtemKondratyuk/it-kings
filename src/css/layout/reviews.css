@@ -119,10 +119,10 @@
 }
 
 @media screen and (min-width: 768px) {
+
   .reviews-section {
     padding-bottom: 100px;
   }
-
   .reviews-section > .container {
     max-width: 743px;
   }
@@ -133,6 +133,7 @@
 
   .reviews-title {
     margin-bottom: 50px;
+    font-size: 24px;
   }
 
   .reviews-section .slick-dots {
@@ -148,10 +149,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+
   .reviews-section {
     padding-bottom: 128px;
   }
-
   .reviews-section > .container {
     max-width: 1176px;
   }
