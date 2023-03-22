@@ -79,22 +79,21 @@
 }
 
 /* Form */
-.explore-subscribe-form {
+.explore-subscribe-input-wrap {
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.explore-subscribe-label {
-  width: 100%;
-  max-width: 398px;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* outline: 1px solid red; */
 }
 
 .explore-subscribe-input {
   display: flex;
   align-items: flex-start;
-  max-width: 263px;
+  width: 100%;
+  max-width: 313px;
   height: 45px;
+  padding-left: 24px;
   border: var(--border);
   filter: var(--filter);
   border-radius: 25px;
@@ -110,6 +109,8 @@
 }
 
 .explore-subscribe-submit {
+  position: absolute;
+  right: 0;
   font-weight: 600;
   font-size: 14px;
   line-height: 1.21;
@@ -138,7 +139,7 @@
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
   .explore-modal {
-    width: 583px;
+    width: 538px;
     height: 412px;
     background-image: url(/img/tetiana-bykovets-t-d.jpg);
   }
@@ -171,6 +172,7 @@
   }
 
   .explore-subscribe-submit {
+    position: unset;
     width: 137px;
     height: 52px;
   }
