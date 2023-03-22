@@ -57,7 +57,7 @@
   stroke-width: 2px;
 }
 
-.icon:not(:last-child) {
+.svg-icon:not(:last-child) {
   margin-right: 18px;
 }
 
