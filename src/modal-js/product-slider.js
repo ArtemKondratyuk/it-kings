@@ -8,21 +8,28 @@ $('.products-responsive').slick({
   slidesToScroll: 1,
   responsive: [
     {
-      breakpoint: 1199,
+      breakpoint: 1200,
       settings: {
         slidesToShow: 4,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2.5,
         slidesToScroll: 1,
       },
     },
     {
-      breakpoint: 374,
+      breakpoint: 530,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 375,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
