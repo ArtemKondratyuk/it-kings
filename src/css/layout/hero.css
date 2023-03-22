@@ -28,8 +28,8 @@
 .hero-button{
         display: flex;
         background-color: #FD9222;
+            border: 1px solid #FD9222;
         border-radius: 100px;
-        border: none;
         padding-top: 12px;
         padding-bottom: 12px;
         padding-left: 28px;
@@ -40,7 +40,16 @@
         font-size: 14px;
         line-height: 1.2;
         margin-right: 14px;
+        transition: background-color 250ms var(--cubic-bezier),
+                color 250ms var(--cubic-bezier);
 }
+
+.hero-button:is(:hover, :focus) {
+    background-color: #FCF1E0;
+        color: #FD9222;
+        border: 1px solid #FCF1E0;
+}
+
 .button-group{
     display: flex;
     text-align: left;
@@ -51,6 +60,15 @@
 .hero-button.none{
 background-color: rgba(28, 28, 28, 0);
 border: 1px solid #FFFFFF;
+color: #fff;
+transition: background-color 250ms var(--cubic-bezier),
+        color 250ms var(--cubic-bezier);
+}
+
+.hero-button.none:is(:hover, :focus) {
+    background-color: #FFFFFF;
+    color: #FD9222;
+    border: 1px solid #FD9222;
 }
 .scroll-group{
 display: flex;
