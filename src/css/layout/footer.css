@@ -42,7 +42,11 @@ footer {
 }
 
 .icon {
-  fill: currentColor;
+  fill: white;
+}
+
+.icon:is(:hover, :focus) {
+  fill: var(--buy-now);
 }
 
 .icon:not(:last-child) {
