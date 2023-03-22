@@ -144,13 +144,13 @@
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
   .how-made .container {
-    max-width: 335px;
+    max-width: 375px;
   }
 }
 
 /* Tablet Styles */
 @media screen and (min-width: 768px) {
-  .how-made .container {
+  .how-made > .container {
     max-width: 614px;
   }
 
@@ -177,7 +177,7 @@
 
 /* Desktop Styles */
 @media screen and (min-width: 1200px) {
-  .how-made .container {
+  .how-made > .container {
     max-width: 1176px;
   }
 
