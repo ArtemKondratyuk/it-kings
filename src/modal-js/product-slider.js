@@ -4,9 +4,7 @@ $('.products-responsive').slick({
   arrows: false,
   mobileFirst: true,
   adaptiveHeight: true,
-  // slidesToShow: 1,
   speed: 300,
-  //   slidesToShow: 4,
   slidesToScroll: 1,
   responsive: [
     {
@@ -31,7 +29,7 @@ $('.products-responsive').slick({
       },
     },
     {
-      breakpoint: 380,
+      breakpoint: 375,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,

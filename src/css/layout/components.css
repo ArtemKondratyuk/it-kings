@@ -42,6 +42,7 @@
 }
 
 .components-item {
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,7 +55,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 336px;
+  width: 300px;
   height: 270px;
   border-radius: 15px;
   border: 1px solid;
@@ -90,7 +91,12 @@
   margin-left: 28px;
   margin-top: 25px;
 }
-
+.components-img-wrap{
+  width: 300px;
+}
+.components-img-wrap img{
+  width: 224px;
+}
 .components-hover-object {
   width: 336px;
   height: 270px;
@@ -158,6 +164,9 @@
   .components-container .container {
     width: 375px;
   }
+  .components-img-wrap{
+    width: 335px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -203,16 +212,16 @@
 
 @media screen and (min-width: 1200px) {
   .components-container {
-    width: 1200px;
+    width: 1176px;
   }
 
   .components-container  .container {
-    width: 1200px;
+    width: 1176px;
   }
 
   .components-list {
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 20px;
   }
 
@@ -239,7 +248,9 @@
     margin-top: 28px;
     margin-bottom: 50px;
   }
-
+  .components-item{
+    width: 270px;
+  }
   .components-hover-object {
     width: 270px;
     height: 270px;

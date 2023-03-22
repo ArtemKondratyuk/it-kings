@@ -10,22 +10,15 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--elipse-b);
-  margin-bottom: 74px;
+  margin-bottom: 32px;
 }
 
 .reviews-title span {
   color: var(--buy-now);
 }
 
-.reviews-list {
-  display: flex;
-  column-gap: 16px;
-  row-gap: 50px;
-  flex-wrap: wrap;
-  margin-bottom: 65px;
-}
-
 .review-card {
+  position: relative;
   width: 100%;
   height: 200px;
   padding: 56px 18px 42px 18px;
@@ -33,7 +26,9 @@
   border: 1px solid var(--sliders);
   box-shadow: 0px 9.04932px 26.5717px var(-shadow);
   border-radius: 15px;
-  position: relative;
+
+  padding-bottom: 42px;
+  margin-top: 42px;
 }
 
 .review-author {
@@ -108,68 +103,65 @@
   transform: translateX(-25%);
 }
 
-@media screen and (min-width: 380px) {
-  .review-slide {
-    max-width: 335px;
-  }
+.reviews-section .slick-list {
+  padding-bottom: 42px;
+  margin-top: 42px;
+}
 
+@media screen and (min-width: 375px) {
   .reviews-section > .container {
     max-width: 375px;
+  }
+
+  .review-slide {
+    max-width: 335px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .reviews-section > .container {
-    max-width: 744px;
+
+  .reviews-section {
+    padding-bottom: 100px;
   }
+  .reviews-section > .container {
+    max-width: 743px;
+  }
+
   .review-slide {
     max-width: 345px;
   }
 
   .reviews-title {
-    margin-bottom: 91px;
+    margin-bottom: 50px;
+    font-size: 24px;
   }
 
-  .reviews-list {
-    margin-bottom: 95px;
-  }
   .reviews-section .slick-dots {
     bottom: -31px;
   }
   .reviews-section .slick-dotted.slick-slider {
     margin-bottom: 94px;
   }
-  .reviews-section {
-    padding-bottom: 100px;
-  }
+
   .review-slide:not(:last-child) {
     margin-right: 16px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+
+  .reviews-section {
+    padding-bottom: 128px;
+  }
   .reviews-section > .container {
     max-width: 1176px;
   }
 
-  .review-card {
+  .review-slide {
     max-width: 360px;
-  }
-
-  .reviews-list {
-    column-gap: 28px;
-  }
-
-  .reviews-section {
-    padding-bottom: 128px;
   }
 
   .review-slide:not(:last-child) {
     margin-right: 28px;
   }
 }
-
-/* .reviews-section .slick-list {
-  overflow: visible;
-  overflow-x: hidden;
- } */
