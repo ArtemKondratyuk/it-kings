@@ -80,20 +80,16 @@
   /* transition: transform var(--trans-time) var(--trans-func); */
 }
 
-/* .how-made-video-link:is(:hover, :focus) {
-  color: var(--buy-now);
-  border-color: var(--buy-now);
-} */
-/* 
-.how-made-video-link:is(:active, :visited) {
+/* .how-made-video-link:is(:hover, :focus),
+.how-made-video-link.current {
+  border: none;
 } */
 
 .how-made-icon {
-  outline: 1px solid tomato;
   width: 14px;
   height: 15px;
   padding: 11px 8px 9px 13px;
-  /* fill: currentColor; */
+  fill: currentColor;
 }
 
 .how-made-recipe-wrap {
@@ -144,7 +140,7 @@
 /* Mobile Styles */
 @media screen and (min-width: 375px) {
   .how-made .container {
-    max-width: 335px;
+    max-width: 375px;
   }
 }
 
