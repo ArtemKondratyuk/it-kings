@@ -84,7 +84,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  /* outline: 1px solid red; */
 }
 
 .explore-subscribe-input {
@@ -106,6 +105,10 @@
   line-height: 1.21;
   letter-spacing: -0.02em;
   color: var(--placeholder-color);
+}
+
+.explore-subscribe-input:is(:focus, :hover, :focus-within) {
+  border-color: var(--buy-now);
 }
 
 .explore-subscribe-submit {
